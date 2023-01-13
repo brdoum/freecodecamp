@@ -1,0 +1,189 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta="charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Matcha Kit</title>
+</head>
+
+<div id="page-wrap">
+  
+  <header id="header">
+    <img id="header-img" src="https://i.postimg.cc/fy8r08qL/8-BAC87-FB-780-D-41-EF-90-B9-07399-FC526-FA.png" alt="matcha-with-halo"><h1 id="matcha-made-in-heaven">matcha made in heaven . . .</h1>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a class="nav-link about" href="#about">about</a>
+        </li>
+        <li>
+          <a class="nav-link demo" href="#demo">demo</a>
+        </li>
+        <li>
+          <a class="nav-link invest" href="#invest">invest</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section id="hero">
+    <h2 id="trad">traditional tools for the tastiest tea</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="enter your email" required>
+      <input id="submit" type="submit" value="Subscribe today for 10% off!" class="button">
+
+    </form> 
+  </section>
+  <div class="container">
+    <section id="about">
+      <div id="facts-explanations">
+      <h3 class="fact">keeping up with tradition</h3>
+      <p class="explain">Our matcha tools are based on the traditional tools used in Japanese Matcha brewing for an authentic experience.</p>
+      <h3 class="fact">bamboozled</h3>
+      <p class="explain">The bamboo bristles of our whisks soften with hot water during the brewing process.</p>
+      <h3 class="fact">stay frothy</h3>
+      <p class="explain">In addition to using our bamboo whisk, sifting your matcha with a strainer before brewing will help to keep your drink frothy and delicious.</p>
+      </div>
+    </section>
+    <section id="demo">
+     <iframe id="video" width="320" height="150" src="https://www.youtube.com/embed/k7sdhilnhqk" title="How to make Matcha ~ how to whisk matcha like a pro!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p id="caption">demonstration from "Chiki Tea" on YouTube</p>
+    </section>
+    
+    <section id="invest">
+      <div class="product" id="whisk">
+        <div class="label">whisk</div>
+        <h2>$10</h2>
+        <ol>
+          <li>Traditional Japanese whisk</li>
+          <li>Bamboo bristles soften in hot water</li>
+        </ol>
+        <button class="button2">Invest</button>
+      </div>
+      <div class="product" id="whisk-and-holder">
+        <div class="label">whisk + holder</div>
+        <h2>$20</h2>
+        <ol>
+          <li>Holder helps preserve lifetime of whisk</li>
+          <li>One of our most popular options</li>
+        </ol>
+        <button class="button2">Invest</button>
+      </div>
+      <div class="product" id="ultimate-bundle">
+        <div class="label">ultimate bundle</div>
+        <h2>$50</h2>
+        <ol>
+          <li>Whisk, holder, and stone tea bowl</li>
+          <li>Includes 30g tin of Ceremonial Grade matcha</li>
+        </ol>
+        <button class="button2">Invest</button>
+      </div>
+    </section>
+    <footer><span>© 2023 MATCHA MADE IN HEAVEN</span></footer>
+  </div>
+</div>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+  --creamy-white:#feffe9;
+  --matcha1:#e4f8ba;
+  --matcha2:#c6e99f;
+  --matcha3:#b4dc87;
+  --matcha4:#a8d480;
+}
+*{font-family:helvetica,serif;padding:0;margin:0;
+}
+header{position:fixed;top:0;background-color:var(--creamy-white);color:var(--matcha4);padding:5px;width:100vw;height:80px;z-index:3}
+#matcha-made-in-heaven{position:absolute;top:45px;display:inline;font-size:1.2rem;text-align:left;max-width:80vw;font-weight:normal;left:80px;}
+#header-img{display:inline;height:80px;}
+
+.nav-link{color:var(--matcha3);
+text-decoration:none;font-size:0.9em;}
+ul{position:fixed;list-style-type:none;display:flex;flex-direction:row;justify-content:flex-end;top:70px;right:0vw}
+nav li{margin-right:10px;}
+.nav-link:hover{color:var(--matcha2)}
+.nav-link:active{color:var(--matcha1)}
+
+#page-wrap{display:block;background:linear-gradient(to bottom,var(--matcha1)10%,var(--matcha2)25%,var(--matcha3)40%,var(--matcha3)70%, var(--matcha4)100%);}
+
+#hero{position:relative;
+top:0;
+/*background-color:var(--matcha1)*/;
+color:var(--matcha4);
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+/*height:50vh;*/
+z-index:2
+}
+#trad{margin-top:125px;font-size:1em;}
+#form{display:flex;flex-direction:column;margin-top:25px}
+#submit{margin-top:25px}
+.button{
+height:40px;width:200px;
+background-color:var(--matcha4);
+border-color:var(--matcha4);
+color:var(--creamy-white);font-weight:bold
+}
+.button:hover{background-color:var(--matcha3)}
+
+.button2{position:relative;;
+height:40px;width:75px;
+background-color:var(--matcha3);
+border-color:var(--matcha4);
+color:var(--creamy-white);font-weight:bold;
+}
+.button2:hover{background-color:var(--matcha2)}
+
+#about{z-index:1;position:relative;
+width:100vw;
+/*height:55vh*/;
+margin-top:50px;
+/*background-color:var(--matcha2)*/;
+color:var(--creamy-white);}
+#facts-explanations{position:relative;display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+margin-left:10vw;margin-right:10vw;padding:5px
+}
+.fact{margin-top:25px;font-weight:normal;}
+.explain{margin-top:5px;font-style:italic;font-size:0.8em;}
+
+#demo{;z-index:1;width:100%;
+/*background-color:var(--matcha3)*/;
+margin-top:75px;
+position:relative;display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;}
+#video{position:relative;margin-top:15px;margin-bottom:15px;border-radius:25px;border-width:1px;border-color:var(--creamy-white);
+;}
+#caption{position:relative;top:-10px;color:var(--creamy-white);font-style:italic;font-size:0.8em;}
+@media (orientation:landscape){#video{width:450px}}
+@media (orientation:portrait){#video{width:300px}}
+
+#invest{position:relative;display:flex;z-index:2;margin-top:50px;align-items:center}
+@media (orientation:landscape){#invest{flex-direction:row}.product{align-items:center;text-align:center;margin:auto}section#invest{margin-left:30px;margin-right:30px}}
+@media (orientation:portrait){#invest{flex-direction:column}.product{align-items:center;text-align:center;margin-bottom:25px}}
+.label{background-color:var(--creamy-white);color:var(--matcha4);font-weight:bold;height:35px;}
+#invest li{color:var(--creamy-white);list-style:none;margin-bottom:20px;;padding:5px}
+#invest h2{color:var(--creamy-white);margin-top:15px;margin-bottom:20px;}
+.product{border:solid 1px var(--creamy-white);width:200px;height:300px;}
+
+footer{position:relative;;text-align:center;width:100%;;background-color:var(--matcha4);height:30px;bottom:5px;margin-top:50px}
+span{position:relative;;font-size:0.9em;color:var(--creamy-white);top:10px}
+
+
+** end of undefined **
+
